@@ -1,0 +1,84 @@
+<html>
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validate.js"></script>
+</head>
+<body>
+    <center><br>
+        <h3>Registration Form</h3>
+        <br/>
+        <form name="f1">
+            <table cellpadding="1" align="center">
+                <tr>
+                    <td> User Name:*</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>Father's Name:*</td>
+                    <td><input type="text" name="fathername"></td>
+                </tr>
+                <tr>
+                    <td>Mother's Name:*</td>
+                    <td><input type="text" name="mothername"></td>
+                </tr>
+                
+                <tr>
+                    <td>Email ID:*</td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Phone Number:*</td>
+                    <td><input type="text" name="phno"></td>
+                </tr>
+                
+                <tr>
+                    <td>Roll Number:*</td>
+                    <td><input type="text" name="rollno"></td>
+                </tr>
+                <tr>
+                    <td>Department:*</td>
+                    <td>
+                        <select name="department" required>
+                            <option value="" disabled selected>Select your department</option>
+                            <option value="Computer Science">Computer Science</option>
+                            <option value="Electrical Engineering">Electrical Engineering</option>
+                            <option value="Mechanical Engineering">Mechanical Engineering</option>
+                            <option value="Civil Engineering">Civil Engineering</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td valign="top">Gender:*</td>
+                    <td><input type="radio" name="gen" value="Male">Male &nbsp;&nbsp;
+                        <input type="radio" name="gen" value="Female">Female
+                    </td>
+                </tr>
+                <tr>
+                    <td valign="top">Language Known:*</td>
+                    <td> 
+                        <input type="checkbox" name="lang" value="C">C<br/>
+                        <input type="checkbox" name="lang" value="C++">C++<br>
+                        <input type="checkbox" name="lang" value="JAVA">JAVA<br>
+                        <input type="checkbox" name="lang" value="PYTHON">PYTHON<br>
+                    </td>
+                </tr>
+                <tr> <td valign="top">Address:*</td>
+                    <td><textarea name="address"></textarea></td>
+                <tr>
+                    <td></td>
+                    <td><input type="button" value="SUBMIT" hspace="10" onclick="validate()">
+                        <input type="reset" value="RESET">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        *<font color="#FF0000">fields are mandatory</font>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>
